@@ -16,7 +16,7 @@ git log --since 3.months.ago --numstat | awk '/^[0-9-]+/{print $NF}' | sort | un
 
 In most companies changing a value in a configuration file costs a minimum of one hour of time spent; deciding the value, tickets, pull/push, MR, review, deployment. If your team is doing ten value changes per week, that’s more than one engineering day of time spent.
 
-## Spend your time wisely
+### Spend your time wisely
 
 You'll go faster by doing less. You'll be more productive by doing less.  Both statements are true, unless you’re picking digital potatoes. 
 
