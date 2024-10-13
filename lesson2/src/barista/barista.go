@@ -2,7 +2,7 @@
 Package barista implements the Barista type and the actions a barista can
 do.
 
-The functions contain pseudcode referenced in lesson 2.
+The functions contain pseudocode referenced in lesson 2.
 */
 package barista
 
