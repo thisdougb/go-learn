@@ -115,7 +115,7 @@ Program exited.
 
 Remember in lesson 1 when we covered _things_ and _types of things_? Our code so far only declares the `Barista` as the _type of thing_. We haven’t really created any baristas yet.
 
-There are a few ways to create _things_ in Go. Start a new playground sessions in another tab and replace `main()` with this:
+There are a few ways to create _things_ in Go. Start a new playground session in another tab and replace `main()` with this:
 
 ```
 func main() {
