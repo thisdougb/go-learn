@@ -178,7 +178,7 @@ func boogie(input Barista) {
 }
 ```
 
-Now inside the `()` we have one argument, which we have named `input` and is of type `Barista`. The `input` is a variable, whose scope is contained within the function. You can create other variables with the name `input` elsehwere in the code and they are completely different to this `input` in this function.
+Now inside the `()` we have one argument, which we have named `input` and is of type `Barista`. The `input` is a variable, whose scope is contained within the function. You can create other variables with the name `input` elsewhere in the code and they are completely different to this `input` in this function.
 
 But when you try and run the program, you should get this error:
 
