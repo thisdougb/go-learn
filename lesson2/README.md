@@ -44,7 +44,7 @@ At some point in the future we’ll be able to give AI some pseudocode and it’
 
 I’ve introduced a `queue` and two methods,  `push` and `pop`. A fifo queue operates on the basis of first in, first out. This is exactly how the legendary British social queue system works in every bus stop, retail shop, _insert any arbitrary reason British people join queues_. The person in the queue who joined first, is the first out (into the bus, served in the shop, etc). The `push` function adds something to the end of a queue, and `pop` gets and removes the first thing in the queue. More on queues [here](https://www.macs.hw.ac.uk/~hwloidl/Courses/F28DA/lectures/l05.pdf).
 
-### Now we’re ready to Go
+## Now we’re ready to Go
 
 Open up the Go [playground](https://go.dev/play/), and you’ll see this:
 
@@ -60,7 +60,7 @@ func main() {
 
 Click the run button, and the lower section will print some output. The entry point in Go is the `func main()` in  `package main`. This is where a Go program starts executing when you click run.
 
-#### A little about types
+### A little about types
 
 Go is statically typed, which means it won’t run if there are type errors. Type errors could be when you try to use a type that doesn’t exist, or try to call a function with the wrong argument types. There are some built-in types, like `int` (a number), `string` (a string of characters). And then there are types you compose yourself, like our `Barista`.
 
@@ -111,7 +111,7 @@ Now when we run the program it doesn’t error. It doesn’t do anything yet, bu
 Program exited.
 ```
 
-#### It’s Alive!
+### It’s Alive!
 
 Remember in lesson 1 when we covered _things_ and _types of things_? Our code so far only declares the `Barista` as the _type of thing_. We haven’t really created any baristas yet.
 
@@ -146,7 +146,7 @@ When we now run the program and print the variable `b`  we get `{id:1}`. Look up
 
 We now have a barista! Declaring and using a composite type is a significant step in learning Go. Well done. Have a grin, because you’re no longer a complete novice in Go.
 
-#### This barista boogies
+### This barista boogies
 
 Let’s animate our baristas with a boogie function. A _boogie function_ is not the name of some clever computer science algorithm. It is in fact, [this](https://en.wikipedia.org/wiki/Boogie).
 
@@ -196,13 +196,13 @@ In Go functions must be called using the correct number and type of arguments. T
 	boogie(b)
 ```
 
-and voila:
+and voilà:
 
 ```
 barista 1 boogies
 ```
 
-### Knowledged gained so far
+## Knowledged gained so far
 
 We have covered a lot of the things you’ll need to understand to make learning Go a happy experience. Here’s a quick recap:
 
@@ -220,14 +220,16 @@ If any of the above hasn’t really sunk in yet, don’t worry. Go off and do so
 
 My wild guess is that the above list covers maybe 20% of learning Go for day to day use. This is a big step forwards. 
 
-I have put an `*` next to the items in the list that are the really valuable things to understand. Approaching a programming task in the right frame of mind is the single biggest power-up you can make to your work. With a little experience and practice these things become second nature rather than explicit steps. And the pay-back over time is huge, as you’ll ultimately be doing more by doing less.
+I have put a `*` next to the items in the list that are the really valuable things to understand. Approaching a programming task in the right frame of mind is the single biggest power-up you can make to your work. With a little experience and practice these things become second nature rather than explicit steps. And the pay-back over time is huge, as you’ll ultimately be doing more by doing less.
 
-### Homework
+In the next lesson we'll fully implement our barista type according to the plan given at the start of this lesson.
+
+## Homework
 
 1. Write a new function `func sings(input Barista)` which accepts a variable of type `Barista` and prints, “barista 1 sings”
 2. Create a second barista (a variable of type `Barista`) and have both baristas boogie then sing.
 
-#### Something more advanced
+### Something more advanced
 
 Modify the sing function to accept two arguments, `func sing(first Barista, second Barista)`.  Call that function from `main()` and make the first barista sing to the second barista. The have the second barista return the gesture.
 
