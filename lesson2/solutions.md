@@ -120,6 +120,9 @@ func main() {
 	var barista2 Barista
 	barista2.id = 2
 
+	boogie(barista1)
+	boogie(barista2)
+
 	sings(barista1, barista2)
 	sings(barista2, barista1)
 }
