@@ -25,6 +25,30 @@ barista 1 sings
 
 ### Part 2
 
+I created a second barista, and refactored the variable naming to be clearer. And the `sings()` function now passes two arguments.
+
+```
+func main() {
+	var barista1 Barista
+	barista1.id = 1
+
+	var barista2 Barista
+	barista2.id = 2
+
+	boogie(barista1)
+	boogie(barista2)
+}
+```
+
+Now we have the beginnings of a party:
+
+```
+barista 1 boogies
+barista 2 boogies
+```
+
+### Part 3
+
 The new function requires two named arguments, both of type `Barista`. In Go (and most languages) the name of each argument must be unique. This is because the named arguments are created as variables within the function (scope).
 
 I have used `b1` and `b2` as names for the arguments. This function is very small, and these names are easy to understand in this context. The names you choose for function arguments should be clear and their meaning obvious.
@@ -45,8 +69,6 @@ The `sings()` function now takes two arguments, so the program fails to run at t
 
 In file `./prog.go` on line `:23` we have the error `not enough arguments in call to sings`.
 
-I created a second barista, and refactored the variable naming to be clearer. And the `sings()` function now passes two arguments.
-
 ```
 func main() {
 	var barista1 Barista
@@ -54,6 +76,9 @@ func main() {
 
 	var barista2 Barista
 	barista2.id = 2
+
+	boogie(barista1)
+	boogie(barista2)
 
 	sings(barista1, barista2)
 	sings(barista2, barista1)
@@ -63,6 +88,8 @@ func main() {
 When run, this gives the output:
 
 ```
+barista 1 boogies
+barista 2 boogies
 barista 1 sings to barista 2
 barista 2 sings to barista 1
 ```
